@@ -3,7 +3,7 @@ import mysql.connector
 import numpy as np
 from sqlalchemy import create_engine
 
-
+# test
 # insert duplicates workaround from https://github.com/pandas-dev/pandas/issues/15988
 def table_column_names(table, cur) -> str:
     """
