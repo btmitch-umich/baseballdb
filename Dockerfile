@@ -5,6 +5,7 @@ USER baseball
 WORKDIR /home/baseball
 RUN mkdir tmp
 RUN chmod 777 ./tmp
+RUN chown -R baseball:baseball /home/baseball/
 COPY *.py /home/baseball/
 COPY *.sh /home/baseball/
 ENV VIRTUAL_ENV=/home/baseball/
